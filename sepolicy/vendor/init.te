@@ -24,3 +24,6 @@ recovery_only(`
 
 allow init proc_vm:file rw_file_perms;
 allow init vendor_sysfs_vibrator:file create_file_perms;
+
+# Allow init to set read_ahead_kb and discard_max_bytes on /data partition
+allow init vendor_sysfs_scsi_host:file w_file_perms;
