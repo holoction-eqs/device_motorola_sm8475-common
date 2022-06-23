@@ -55,6 +55,9 @@
 /data/vendor/fpc(/.*)?                                  u:object_r:fingerprint_vendor_data_file:s0
 /dev/esfp0                                              u:object_r:egis_device:s0
 
+# Health
+/vendor/bin/hw/android\.hardware\.health-service\.qti   u:object_r:hal_health_default_exec:s0
+
 # Media
 /(vendor|system/vendor)/bin/hw/vendor\.dolby\.media\.c2@1\.0-service            u:object_r:mediacodec_exec:s0
 
