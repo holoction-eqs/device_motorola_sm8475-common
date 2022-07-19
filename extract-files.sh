@@ -63,6 +63,11 @@ function blob_fixup() {
         system_ext/etc/permissions/moto-telephony.xml)
             sed -i "s#/system/#/system_ext/#" "${2}"
             ;;
+        vendor/etc/media_cape/video_system_specs.json \
+        |vendor/etc/media_ukee/video_system_specs.json \
+        |vendor/etc/media_taro/video_system_specs.json)
+            sed -i "/max_retry_alloc_output_timeout/ s/2000/0/" "${2}"
+            ;;
         vendor/etc/vintf/manifest/vendor.dolby.media.c2@1.0-service.xml)
             sed -ni '/default1/!p' "${2}"
             ;;
