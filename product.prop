@@ -8,3 +8,5 @@ audio.sys.offload.pstimeout.secs=3
 # Media
 media.stagefright.audio.deep=false
 
+# Theme
+ro.boot.theme=1
