@@ -177,8 +177,9 @@ ENABLE_VENDOR_RIL_SERVICE := true
 # SELinux
 include device/qcom/sepolicy_vndr/SEPolicy.mk
 BUILD_BROKEN_VENDOR_PROPERTY_NAMESPACE := true
-SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/private
 BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
+PRODUCT_PRIVATE_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/private
+PRODUCT_PUBLIC_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/public
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
