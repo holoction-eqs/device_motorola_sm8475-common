@@ -171,6 +171,9 @@ TARGET_RECOVERY_DEVICE_DIRS += $(COMMON_PATH)
 TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab.qcom
 TARGET_RECOVERY_WIPE := $(COMMON_PATH)/recovery/recovery.wipe
 
+# recovery/root prebuilts
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,$(COMMON_PATH)/recovery/root,recovery/root)
+
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
 
