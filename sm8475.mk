@@ -413,6 +413,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.power-service-qti
 
+# Protobuf
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilts/system_ext/lib/libprotobuf-cpp-full.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libprotobuf-cpp-full-v33.so \
+    $(LOCAL_PATH)/prebuilts/system_ext/lib64/libprotobuf-cpp-full.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libprotobuf-cpp-full-v33.so
+
 # QMI
 PRODUCT_PACKAGES += \
     libjson \
