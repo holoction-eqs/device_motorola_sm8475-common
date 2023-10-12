@@ -413,6 +413,10 @@ PRODUCT_PACKAGES += \
     libprotobuf-cpp-lite-3.9.1-vendorcompat \
     libprotobuf-cpp-full-3.9.1-vendorcompat
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilts/v33/system_ext/lib/libprotobuf-cpp-full.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libprotobuf-cpp-full-v33.so \
+    $(LOCAL_PATH)/prebuilts/v33/system_ext/lib64/libprotobuf-cpp-full.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libprotobuf-cpp-full-v33.so
+
 # QMI
 PRODUCT_PACKAGES += \
     libjson \
