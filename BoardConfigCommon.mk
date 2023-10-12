@@ -146,6 +146,7 @@ TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
 
 # GPS
 BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := default
+TARGET_USES_HARDWARE_QCOM_GPS := false
 
 # HIDL
 DEVICE_FRAMEWORK_MANIFEST_FILE += $(COMMON_PATH)/framework_manifest.xml
@@ -238,6 +239,8 @@ WIFI_HIDL_FEATURE_AWARE := true
 WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
+
+TARGET_USES_HARDWARE_QCOM_WLAN := false
 
 # inherit from the proprietary version
 include vendor/motorola/sm8475-common/BoardConfigVendor.mk
