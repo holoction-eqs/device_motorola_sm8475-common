@@ -367,7 +367,7 @@ vendor/lib64/libsdmextension.so
 vendor/lib64/libtestutils.so
 vendor/lib64/libtinyxml2_1.so
 
-# Display - SDM prebuilt from AOSP
+# Display - SDM prebuilt from AOSP v33
 vendor/lib/libsdmcore.so
 vendor/lib64/libsdmcore.so
 vendor/bin/hw/vendor.qti.hardware.display.composer-service
@@ -379,7 +379,7 @@ vendor/lib64/vendor.qti.hardware.display.config-V5-ndk.so
 vendor/lib/libtinycompress.so
 vendor/lib64/libtinycompress.so
 
-# Fix mb - Prebuilt from AOSP
+# Fix mb - Prebuilt from AOSP v33
 vendor/lib/librmnetctl.so
 vendor/lib64/librmnetctl.so
 
@@ -627,6 +627,10 @@ vendor/etc/vintf/manifest/android.hardware.security.keymint-service-qti.xml
 vendor/lib/libqtikeymint.so
 vendor/lib64/libqtikeymint.so
 
+# Keymint - prebuilt from AOSP v33
+vendor/lib/android.hardware.security.keymint-V1-ndk.so
+vendor/lib64/android.hardware.security.keymint-V1-ndk.so
+
 # Listen
 vendor/lib/hw/sound_trigger.primary.taro.so
 vendor/lib/libcapiv2svacnnvendor.so
@@ -822,6 +826,12 @@ vendor/bin/power_off_alarm
 vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc
 vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.alarm@1.0.so
+
+# Protobuf - prebuilt from AOSP v33
+vendor/lib/libprotobuf-cpp-full-3.9.1.so
+vendor/lib/libprotobuf-cpp-lite-3.9.1.so
+vendor/lib64/libprotobuf-cpp-full-3.9.1.so
+vendor/lib64/libprotobuf-cpp-lite-3.9.1.so
 
 # QCC - System
 system_ext/bin/qccsyshal@1.2-service
@@ -1236,7 +1246,7 @@ system_ext/lib64/libimsmedia_jni.so
 system_ext/lib64/vendor.qti.imsrtpservice@3.0.so
 system_ext/lib64/vendor.qti.imsrtpservice@3.1.so
 
-# RIL - IMS - prebuilt from AOSP
+# RIL - IMS - prebuilt from AOSP v33
 vendor/lib/libjnihelper.so
 vendor/lib64/libjnihelper.so
 
