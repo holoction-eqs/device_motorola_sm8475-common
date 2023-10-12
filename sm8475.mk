@@ -16,7 +16,6 @@
 
 PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
-PRODUCT_ENFORCE_PACKAGES_EXIST := true
 
 # Enable project quotas and casefolding for emulated storage without sdcardfs
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
@@ -144,6 +143,7 @@ PRODUCT_PACKAGES += \
     libdisplayconfig.system.qti \
     libqdMetaData \
     libqdMetaData.system \
+    libsdmcore \
     libsdmutils \
     vendor.display.config@1.11.vendor \
     vendor.display.config@2.0 \
@@ -151,19 +151,11 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.config \
     vendor.qti.hardware.display.config-V2-ndk.vendor \
     vendor.qti.hardware.display.allocator-service \
+    vendor.qti.hardware.display.composer-service \
     vendor.qti.hardware.display.demura-service \
     vendor.qti.hardware.display.mapper@2.0.vendor \
     vendor.qti.hardware.display.mapper@3.0.vendor \
-    vendor.qti.hardware.display.mapper@4.0.vendor \
-    vendor.qti.hardware.display.composer@3.0.vendor \
-    vendor.qti.hardware.display.composer@3.1.vendor \
-    libsdedrm \
-    libqservice \
-    libqdutils \
-    libhistogram \
-    libgpu_tonemapper \
-    libdrmutils \
-    libdrm
+    vendor.qti.hardware.display.mapper@4.0.vendor
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -427,7 +419,8 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.config@1.3.vendor \
     android.hardware.radio.deprecated@1.0.vendor \
     android.system.net.netd@1.1.vendor \
-    libprotobuf-cpp-full
+    libprotobuf-cpp-full \
+    librmnetctl
 
 # Sensors
 PRODUCT_PACKAGES += \
@@ -438,7 +431,8 @@ PRODUCT_PACKAGES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
-    vendor/qcom/opensource/data-ipa-cfg-mgr
+    vendor/qcom/opensource/data-ipa-cfg-mgr \
+    hardware/qcom-caf/sm8450/display
 
 # Telephony
 PRODUCT_PACKAGES += \
