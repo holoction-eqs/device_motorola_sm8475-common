@@ -367,7 +367,7 @@ vendor/lib64/libsdmextension.so
 vendor/lib64/libtestutils.so
 vendor/lib64/libtinyxml2_1.so
 
-# Display - SDM prebuilt
+# Display - SDM prebuilt from AOSP
 vendor/lib/libsdmcore.so
 vendor/lib64/libsdmcore.so
 vendor/bin/hw/vendor.qti.hardware.display.composer-service
@@ -376,8 +376,10 @@ vendor/etc/vintf/manifest/vendor.qti.hardware.display.composer-service.xml
 vendor/lib/vendor.qti.hardware.display.config-V2-ndk.so
 vendor/lib64/vendor.qti.hardware.display.config-V2-ndk.so
 vendor/lib64/vendor.qti.hardware.display.config-V5-ndk.so
+vendor/lib/libtinycompress.so
+vendor/lib64/libtinycompress.so
 
-# Fix mb
+# Fix mb - Prebuilt from AOSP
 vendor/lib/librmnetctl.so
 vendor/lib64/librmnetctl.so
 
@@ -1230,6 +1232,10 @@ system_ext/lib64/libimscamera_jni.so
 system_ext/lib64/libimsmedia_jni.so
 system_ext/lib64/vendor.qti.imsrtpservice@3.0.so
 system_ext/lib64/vendor.qti.imsrtpservice@3.1.so
+
+# RIL - IMS - prebuilt from AOSP
+vendor/lib/libjnihelper.so
+vendor/lib64/libjnihelper.so
 
 # RIL - IMS
 vendor/bin/ims_rtp_daemon
