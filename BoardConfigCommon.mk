@@ -18,6 +18,9 @@ BOARD_VENDOR := motorola
 
 COMMON_PATH := device/motorola/sm8475-common
 
+# Broken
+SELINUX_IGNORE_NEVERALLOWS := true
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-2a
@@ -44,7 +47,7 @@ BOARD_BOOT_HEADER_VERSION := 4
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_CMDLINE += printk.devkmsg=on
 BOARD_KERNEL_CMDLINE += firmware_class.path=/data/vendor/param/firmware
-#BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_BOOTCONFIG += androidboot.hardware=qcom
 BOARD_BOOTCONFIG += androidboot.memcg=1
 BOARD_BOOTCONFIG += androidboot.usbcontroller=a600000.dwc3
