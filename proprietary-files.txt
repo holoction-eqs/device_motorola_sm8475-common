@@ -118,7 +118,7 @@ vendor/lib64/libagmmixer.so
 -vendor/lib64/vendor.qti.hardware.AGMIPC@1.0-impl.so
 
 # Audio libraries
-vendor/lib/hw/audio.primary.taro.so:vendor/lib/hw/audio.primary.taro-moto.so;DISABLE_CHECKELF
+vendor/lib/hw/audio.primary.taro.so
 vendor/lib/libadm.so
 vendor/lib/libadsprpc.so
 vendor/lib/libar-acdb.so
@@ -130,12 +130,14 @@ vendor/lib/libaualgo_foundation.so
 vendor/lib/libaualgo_sst_component.so
 vendor/lib/libaudio_log_utils.so
 vendor/lib/libdapparamstorage.so
+vendor/lib/libfmpal.so
 vendor/lib/liblx-ar_util.so
 -vendor/lib/liblx-osal.so
 vendor/lib/libmcs.so
 vendor/lib/libpal_net_if.so
+vendor/lib/libpalclient.so
 vendor/lib/libqtigefar.so
-vendor/lib64/hw/audio.primary.taro.so:vendor/lib64/hw/audio.primary.taro-moto.so;DISABLE_CHECKELF
+vendor/lib64/hw/audio.primary.taro.so
 vendor/lib64/libadm.so
 vendor/lib64/libadsprpc.so
 vendor/lib64/libar-acdb.so
@@ -147,10 +149,12 @@ vendor/lib64/libaualgo_foundation.so
 vendor/lib64/libaualgo_sst_component.so
 vendor/lib64/libaudio_log_utils.so
 vendor/lib64/libdapparamstorage.so
+vendor/lib64/libfmpal.so
 vendor/lib64/liblx-ar_util.so
 -vendor/lib64/liblx-osal.so
 vendor/lib64/libmcs.so
 vendor/lib64/libpal_net_if.so
+vendor/lib64/libpalclient.so
 vendor/lib64/libqtigefar.so
 
 # Audio misc
@@ -177,6 +181,7 @@ vendor/lib/soundfx/libspeakerbundle.so
 vendor/lib/soundfx/libswdap.so
 vendor/lib/soundfx/libswgamedap.so
 vendor/lib/soundfx/libvisualizer.so
+vendor/lib/soundfx/libvolumelistener.so
 vendor/lib64/soundfx/libasphere.so
 vendor/lib64/soundfx/libaudiopreprocessing.so
 vendor/lib64/soundfx/libbundlewrapper.so
@@ -192,6 +197,7 @@ vendor/lib64/soundfx/libspeakerbundle.so
 vendor/lib64/soundfx/libswdap.so
 vendor/lib64/soundfx/libswgamedap.so
 vendor/lib64/soundfx/libvisualizer.so
+vendor/lib64/soundfx/libvolumelistener.so
 
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
@@ -447,6 +453,8 @@ system_ext/lib64/libdpmctmgr.so
 system_ext/lib64/libdpmfdmgr.so
 system_ext/lib64/libdpmframework.so
 system_ext/lib64/libdpmtcm.so
+system_ext/lib64/vendor.qti.hardware.dpmservice@1.0.so
+system_ext/lib64/vendor.qti.hardware.dpmservice@1.1.so
 -system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk
 vendor/bin/dpmQmiMgr
 vendor/bin/vendor.dpmd
@@ -465,11 +473,11 @@ vendor/lib64/vendor.qti.hardware.dpmservice@1.1.so
 
 # DRM
 vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service
+vendor/lib/libGPreqcancel_svc.so
+vendor/lib/libQSEEComAPI.so
 vendor/bin/qseecomd
 vendor/etc/init/qseecomd.rc
 vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc
-vendor/lib/libGPreqcancel_svc.so
-vendor/lib/libQSEEComAPI.so
 vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so
 vendor/lib64/libGPreqcancel.so
 vendor/lib64/libGPreqcancel_svc.so
@@ -631,13 +639,13 @@ vendor/etc/msm_irqbalance.conf
 # Keymaster
 vendor/bin/hw/android.hardware.keymaster@4.0-strongbox-service-qti
 vendor/bin/hw/android.hardware.keymaster@4.1-service-qti
-vendor/bin/init.qti.keymaster.sh
-vendor/etc/init/android.hardware.keymaster@4.0-strongbox-service-qti.rc
-vendor/etc/init/android.hardware.keymaster@4.1-service-qti.rc
 vendor/lib/libkeymasterdeviceutils.so
 vendor/lib/libkeymasterprovision.so
 vendor/lib/libkeymasterutils.so
 vendor/lib/libqtikeymaster4.so
+vendor/bin/init.qti.keymaster.sh
+vendor/etc/init/android.hardware.keymaster@4.0-strongbox-service-qti.rc
+vendor/etc/init/android.hardware.keymaster@4.1-service-qti.rc
 vendor/lib64/libkeymasterdeviceutils.so
 vendor/lib64/libkeymasterprovision.so
 vendor/lib64/libkeymasterutils.so
@@ -696,6 +704,7 @@ vendor/etc/seccomp_policy/codec2.vendor.ext-arm64.policy
 -vendor/etc/vintf/manifest/vendor.dolby.media.c2@1.0-service.xml
 vendor/lib/qti.video.utils.videobufferlayout.so
 vendor/lib64/libcodec2_soft_ac4dec.so
+vendor/lib64/libcodec2_soft_common.so
 vendor/lib64/libcodec2_soft_ddpdec.so
 vendor/lib64/libcodec2_store_dolby.so
 vendor/lib64/libdeccfg.so
@@ -724,6 +733,7 @@ vendor/lib64/libqcodec2_mockqc2filter.so
 vendor/lib64/libqcodec2_platform.so
 vendor/lib64/libqcodec2_utils.so
 vendor/lib64/libqcodec2_v4l2codec.so
+vendor/lib64/libsfplugin_ccodec_utils.so
 vendor/lib64/libvideotxr.so
 vendor/lib64/libvideoutils.so
 vendor/lib64/qti.video.utils.videobufferlayout.so
@@ -784,6 +794,7 @@ vendor/lib/libqti-utils.so
 vendor/lib/libskewknob.so
 vendor/lib/libvendorscenariopoweroptfeature.so
 vendor/lib/libvideooptfeature.so
+vendor/lib/vendor.qti.hardware.perf@2.3.so
 vendor/lib/vendor.qti.memory.pasrmanager@1.0.so
 vendor/lib/vendor.qti.memory.pasrmanager@1.1.so
 vendor/lib64/liblearningmodule.so
@@ -802,6 +813,7 @@ vendor/lib64/libskewknob.so
 vendor/lib64/libstandbyfeature.so
 vendor/lib64/libvendorscenariopoweroptfeature.so
 vendor/lib64/libvideooptfeature.so
+vendor/lib64/vendor.qti.hardware.perf@2.3.so
 vendor/lib64/vendor.qti.hardware.power.powermodule@1.0.so
 vendor/lib64/vendor.qti.memory.pasrmanager@1.0.so
 vendor/lib64/vendor.qti.memory.pasrmanager@1.1.so
@@ -977,6 +989,7 @@ vendor/lib64/hw/vendor.qti.hardware.servicetracker@1.2-impl.so
 # QXR
 vendor/bin/hw/qvrservice
 vendor/bin/qvrcameratest
+vendor/bin/qvrdatalogger
 vendor/etc/init/qvrd_vndr.rc
 vendor/etc/qvr/cfg/339/0/65536/mtp855.txt
 vendor/etc/qvr/cfg/339/0/65536/mtp855_6dof_config.xml
@@ -1440,9 +1453,15 @@ vendor/lib64/libets_teeclient_v3.so
 vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so
 
 # Trusted User Interface
+vendor/lib64/libTrustedUI.so
+vendor/lib64/libTrustedUITZ.so
+vendor/lib64/libTrustedUIVM.so
+vendor/lib64/libsi.so
+vendor/lib64/libtrustedapploader.so
 vendor/lib64/vendor.qti.hardware.trustedui@1.0.so
 vendor/lib64/vendor.qti.hardware.trustedui@1.1.so
 vendor/lib64/vendor.qti.hardware.trustedui@1.2.so
+vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
 
 # VPP
 vendor/bin/hw/qconfigservice
