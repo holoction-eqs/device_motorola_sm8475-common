@@ -565,9 +565,6 @@ vendor/etc/init/android.hardware.security.keymint-service-qti.rc
 vendor/etc/vintf/manifest/android.hardware.security.keymint-service-qti.xml
 vendor/lib64/libqtikeymint.so
 
-# Keymint - prebuilt from AOSP v33
-vendor/lib64/android.hardware.security.keymint-V1-ndk.so
-
 # Listen
 vendor/lib64/hw/sound_trigger.primary.taro.so
 vendor/lib64/libcapiv2svacnnvendor.so
