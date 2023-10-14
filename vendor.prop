@@ -236,6 +236,7 @@ debug.sf.latch_unsignaled=1
 debug.sf.scroll_boost_refreshrate=120
 debug.sf.touch_boost_refreshrate=90
 graphics.gpu.profiler.support=true
+debug.renderengine.backend=skiaglthreaded
 persist.sys.sf.color_mode=0
 persist.sys.sf.color_saturation=1.0
 persist.sys.sf.force_brightness_capability=1
