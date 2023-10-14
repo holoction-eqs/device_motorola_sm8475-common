@@ -5,5 +5,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     coreApp="true"
     package="com.android.systemui.overlay.common">
-    <overlay android:targetPackage="com.android.systemui" android:isStatic="true" />
+    <overlay android:targetPackage="com.android.systemui" android:targetName="SystemUI" android:isStatic="true" />
 </manifest>
