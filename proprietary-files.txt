@@ -148,7 +148,6 @@ vendor/etc/models/acd/speech.eai
 
 # Audio - soundfx
 vendor/lib/soundfx/libasphere.so
-vendor/lib/soundfx/libdlbvol.so
 vendor/lib/soundfx/libmmieffectswrapper.so
 vendor/lib/soundfx/libmsstwrapper.so
 vendor/lib/soundfx/libshoebox.so
@@ -156,7 +155,6 @@ vendor/lib/soundfx/libspeakerbundle.so
 vendor/lib/soundfx/libswdap.so
 vendor/lib/soundfx/libswgamedap.so
 vendor/lib64/soundfx/libasphere.so
-vendor/lib64/soundfx/libdlbvol.so
 vendor/lib64/soundfx/libmsstwrapper.so
 vendor/lib64/soundfx/libshoebox.so
 vendor/lib64/soundfx/libspeakerbundle.so
