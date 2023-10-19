@@ -264,6 +264,9 @@ debug.stagefright.ccodec=4
 debug.stagefright.omx_default_rank=0
 media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 
+# Memory
+persist.device_config.mglru_native.lru_gen_config=all
+
 # NFC
 ro.nfc.port=I2C
 
