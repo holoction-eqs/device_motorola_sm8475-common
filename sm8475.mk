@@ -403,6 +403,9 @@ PRODUCT_PACKAGES += \
 # Preopt SystemUI
 PRODUCT_DEXPREOPT_SPEED_APPS += SystemUIGoogle
 
+# Preopt SystemUI
+PRODUCT_DEXPREOPT_SPEED_APPS += SystemUIGoogle
+
 # Protobuf
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-lite-3.9.1-vendorcompat \
