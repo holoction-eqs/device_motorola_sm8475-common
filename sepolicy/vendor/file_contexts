@@ -70,6 +70,9 @@
 /data/vendor/misc/cutback(/.*)?                         u:object_r:cutback_data_file:s0
 /dev/socket/cutback                                     u:object_r:cutback_socket:s0
 
+# Power
+/vendor/bin/hw/android\.hardware\.power-service\.moto-libperfmgr u:object_r:hal_power_default_exec:s0
+
 # Secure Element
 /(vendor|system/vendor)/bin/hw/android\.hardware\.secure_element@1\.2-service-gto        u:object_r:hal_secure_element_default_exec:s0
 /dev/st54spi                                                                             u:object_r:secure_element_device:s0
