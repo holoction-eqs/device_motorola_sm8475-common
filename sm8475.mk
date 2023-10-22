@@ -402,8 +402,7 @@ PRODUCT_PACKAGES += \
     libqti-perfd-client
 
 # Power
-PRODUCT_PACKAGES += \
-    android.hardware.power-service.moto-common-libperfmgr
+$(call inherit-product, hardware/motorola/power-libperfmgr/aidl/device.mk)
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
