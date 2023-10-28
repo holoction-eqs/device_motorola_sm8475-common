@@ -6,6 +6,9 @@ audio.offload.min.duration.secs=60
 audio.offload.video=true
 media.aac_51_output_enabled=true
 
+# Camera
+persist.vendor.camera.privapp.list=com.motorola.camera3
+
 # Charger
 ro.charger.enable_suspend=1
 
