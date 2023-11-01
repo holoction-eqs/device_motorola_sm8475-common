@@ -4633,7 +4633,7 @@ case "$target" in
 	fi
 	echo N > /sys/module/lpm_levels/parameters/sleep_disabled
         # Starting io prefetcher service
-        #start iop
+        start iop
 
 	# Disable panic on ue
 	echo -1 > /sys/devices/system/edac/qcom-llcc/panic_on_ue
