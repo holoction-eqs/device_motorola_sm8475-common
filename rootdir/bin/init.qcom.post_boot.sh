@@ -4635,6 +4635,9 @@ case "$target" in
         # Starting io prefetcher service
         #start iop
 
+	# Disable panic on ue
+	echo -1 > /sys/devices/system/edac/qcom-llcc/panic_on_ue
+
         # Set Memory parameters
         configure_memory_parameters
     ;;

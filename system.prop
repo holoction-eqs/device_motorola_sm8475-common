@@ -27,6 +27,11 @@ persist.data.df.iwlan_mux=9
 persist.data.df.mux_count=8
 persist.data.df.ul_mode=5
 
+# Scroll tweaks
+persist.service.lgospd.enable=0
+persist.service.pcsync.enable=0
+persist.sys.use_16bpp_alpha=1
+
 # IMS
 persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
