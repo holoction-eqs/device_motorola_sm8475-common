@@ -270,9 +270,12 @@ PRODUCT_PACKAGES += \
     libavservices_minijail \
     libavservices_minijail_vendor \
     libavservices_minijail.vendor \
-    libcodec2_hidl@1.2.vendor \
     libpalclient \
-    android.hardware.media.c2@1.2.vendor
+    android.hardware.media.c2@1.2.vendor \
+    libcodec2_soft_common.vendor \
+    libsfplugin_ccodec_utils.vendor \
+    libstagefright_foundation \
+    libstagefright_softomx
 
 # MotoActions
 PRODUCT_PACKAGES += \
