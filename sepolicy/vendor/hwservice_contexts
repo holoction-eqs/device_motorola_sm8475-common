@@ -10,6 +10,9 @@ vendor.egistec.hardware.fingerprint::IBiometricsFingerprintRbs          u:object
 vendor.nxp.nxpese::INxpEse                                              u:object_r:nxpese_hwservice:s0
 vendor.nxp.nxpnfc::INxpNfc                                              u:object_r:nxpnfc_hwservice:s0
 
+# Vibrator
+vendor.aac.hardware.richtap.vibrator::IRichtapVibrator                  u:object_r:hal_vibrator_hwservice:s0
+
 # WLC
 vendor.google.wireless_charger::IWirelessCharger 			u:object_r:hal_wlc_hwservice:s0
 

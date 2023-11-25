@@ -48,6 +48,7 @@ type vendor_sysfs_v4l2_name, fs_type, sysfs_type;
 
 # Vibrator
 type vendor_sysfs_vibrator, fs_type, sysfs_type;
+type aac_richtap_dev_device, dev_type;
 
 # VM
 type proc_vm, fs_type, proc_type;
