@@ -18,6 +18,9 @@ BOARD_VENDOR := motorola
 
 COMMON_PATH := device/motorola/sm8475-common
 
+# Broken
+NEED_AIDL_NDK_PLATFORM_BACKEND := true
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-2a
