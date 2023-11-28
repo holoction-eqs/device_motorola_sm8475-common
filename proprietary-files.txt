@@ -365,6 +365,10 @@ vendor/lib64/libsdmextension.so
 vendor/lib64/libtestutils.so
 vendor/lib64/libtinyxml2_1.so
 
+# Display - SDM prebuilt from AOSP v33
+vendor/lib64/vendor.qti.hardware.display.config-V2-ndk.so
+vendor/lib64/vendor.qti.hardware.display.config-V5-ndk.so
+
 # Display postprocessing
 vendor/bin/hw/vendor.display.color@1.0-service
 vendor/bin/ppd
