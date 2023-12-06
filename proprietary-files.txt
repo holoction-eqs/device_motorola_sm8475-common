@@ -591,6 +591,11 @@ vendor/etc/init/vendor.dolby.media.c2@1.0-service.rc
 vendor/etc/init/vendor.qti.media.c2@1.0-service.rc
 vendor/etc/init/vendor.qti.media.c2audio@1.0-service.rc
 vendor/etc/media_cape/video_system_specs.json
+vendor/etc/media_diwali_v0/video_system_specs.json
+vendor/etc/media_diwali_v1/video_system_specs.json
+vendor/etc/media_diwali_v2/video_system_specs.json
+vendor/etc/media_taro/video_system_specs.json
+vendor/etc/media_ukee/video_system_specs.json
 vendor/etc/seccomp_policy/c2audio.vendor.base-arm.policy
 vendor/etc/seccomp_policy/c2audio.vendor.base-arm64.policy
 vendor/etc/seccomp_policy/c2audio.vendor.ext-arm.policy
@@ -1194,6 +1199,7 @@ vendor/etc/init/qconfig.rc
 vendor/etc/init/vppservice.rc
 vendor/etc/vintf/manifest/vendor.qti.hardware.qconfig@1.0-service.xml
 vendor/etc/vintf/manifest/vendor.qti.hardware.vpp@2.0-service.xml
+vendor/lib64/libqconfigclient.so
 vendor/lib64/libvppclient.so
 vendor/lib64/libvppcommon.so
 vendor/lib64/libvpphcp.so
