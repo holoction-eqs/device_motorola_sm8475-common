@@ -102,9 +102,9 @@ function blob_fixup() {
         # rename moto modified primary audio to not conflict with source built
         vendor/lib/hw/audio.primary.taro-moto.so | vendor/lib64/hw/audio.primary.taro-moto.so)
             "${PATCHELF}" --set-soname audio.primary.taro-moto.so "${2}"
+	    ;;
         vendor/bin/hw/android.hardware.security.keymint-service-qti)
             ${PATCHELF} --add-needed "android.hardware.security.rkp-V3-ndk.so" "${2}"
-            ;;
     esac
 }
 
