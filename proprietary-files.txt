@@ -128,11 +128,18 @@ vendor/etc/models/acd/speech.eai
 
 # Audio - soundfx
 vendor/lib64/soundfx/libasphere.so
+vendor/lib64/soundfx/libdlbvol.so
+vendor/lib64/soundfx/libdynproc.so
+vendor/lib64/soundfx/libhapticgenerator.so
 vendor/lib64/soundfx/libmsstwrapper.so
+vendor/lib64/soundfx/libqcompostprocbundle.so
+vendor/lib64/soundfx/libqcomvisualizer.so
+vendor/lib64/soundfx/libqcomvoiceprocessing.so
 vendor/lib64/soundfx/libshoebox.so
 vendor/lib64/soundfx/libspeakerbundle.so
 vendor/lib64/soundfx/libswdap.so
 vendor/lib64/soundfx/libswgamedap.so
+vendor/lib64/soundfx/libvolumelistener.so
 
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
