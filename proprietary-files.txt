@@ -1088,6 +1088,7 @@ vendor/etc/init/init.vendor.qti.spu@1.1-service.rc
 vendor/lib64/vendor.qti.spu@1.0.so
 vendor/lib64/vendor.qti.spu@1.1.so
 vendor/lib64/vendor.qti.spu@2.0.so
+vendor/lib64/libqti-utils.so
 
 # SXR
 vendor/bin/hw/sxrservice
