@@ -108,7 +108,6 @@ function configure_read_ahead_kb_values() {
 		if [ `cat $(dirname $dm)/../removable` -eq 0 ]; then
 			echo $ra_kb > $dm
 		fi
-
 	done
 }
 
