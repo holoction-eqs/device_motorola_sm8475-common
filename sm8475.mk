@@ -248,7 +248,7 @@ $(foreach f,$(wildcard $(LOCAL_PATH)/rootdir/bin/*.sh),\
         $(eval PRODUCT_COPY_FILES += $(f):$(TARGET_COPY_OUT_VENDOR)/bin/$(notdir $f)))
 
 # Metadata logging init - comment if unneeded
-#$(foreach f,$(wildcard $(LOCAL_PATH)/sysinit/*.rc),\
+$(foreach f,$(wildcard $(LOCAL_PATH)/sysinit/*.rc),\
         $(eval PRODUCT_COPY_FILES += $(f):$(TARGET_COPY_OUT_SYSTEM)/etc/init/$(notdir $f)))
 
 # IPACM

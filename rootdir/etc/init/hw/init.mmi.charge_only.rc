@@ -14,6 +14,8 @@ on property:init.svc.vendor.mmi-usb-sh=stopped && property:ro.boot.mode=charger 
     setprop sys.usb.config charging,adb
 
 on moto-charger
+    stop qseecom-service
+    stop hwservicemanager
     stop vendor.sensors
     trigger firmware_mounts_complete
     wait /sys/class/power_supply/battery
@@ -35,13 +37,23 @@ on moto-charger
     write /sys/devices/system/cpu/cpu5/online 0
     write /sys/devices/system/cpu/cpu6/online 0
     write /sys/devices/system/cpu/cpu7/online 0
+    #Enable UFS clock scaling back
+    write /sys/bus/platform/devices/1d84000.ufshc/clkscale_enable 1
+    #Enable UFS auto_hibern8 back
+    write /sys/bus/platform/devices/1d84000.ufshc/auto_hibern8 5000
+    #Enable UFS clock gating back
+    write /sys/bus/platform/devices/1d84000.ufshc/clkgate_enable 1
 
-service vendor.thermal-com /vendor/bin/thermal-engine-v2 --minimode
-    class charger
-    user root
-    group root system oem_2907
-    socket thermal-send-client stream 0666 system oem_2907
-    socket thermal-recv-client stream 0660 system oem_2907
-    socket thermal-recv-passive-client stream 0666 system oem_2907
-    socket thermal-send-rule stream 0660 system oem_2907
-    disabled
+    #Enable UFS clock scaling back
+    write /sys/bus/platform/devices/1d84000.ufshc/clkscale_enable 1
+    #Enable UFS auto_hibern8 back
+    write /sys/bus/platform/devices/1d84000.ufshc/auto_hibern8 5000
+    #Enable UFS clock gating back
+    write /sys/bus/platform/devices/1d84000.ufshc/clkgate_enable 1
+
+on firmware_mounts_complete && property:ro.boot.mode=charger && property:persist.vendor.qcomsysd.enabled=1
+    stop qcomsysd
+
+on moto-charger && property:ro.vendor.build.motfactory=1
+    wait /sys/class/power_supply/battery/device/factory_image_mode
+    write /sys/class/power_supply/battery/device/factory_image_mode 1
