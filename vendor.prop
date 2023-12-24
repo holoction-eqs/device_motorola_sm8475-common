@@ -194,6 +194,7 @@ vendor.display.enable_async_vds_creation=1
 vendor.display.enable_dpps_dynamic_fps=1
 vendor.display.enable_early_wakeup=1
 vendor.display.enable_hdr10_gpu_target=1
+vendor.display.enable_display_extensions=1
 vendor.display.enable_optimize_refresh=0
 vendor.display.enable_perf_hint_large_comp_cycle=1
 vendor.display.enable_posted_start_dyn=2
@@ -273,6 +274,7 @@ persist.device_config.mglru_native.lru_gen_config=all
 
 # NFC
 ro.nfc.port=I2C
+persist.vendor.nfc.polling_timeout=1440
 
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
@@ -310,7 +312,6 @@ persist.vendor.radio.start_ota_daemon=0
 persist.vendor.radio.sw_mbn_update=0
 persist.vendor.radio.sar_sensor=1
 persist.vendor.radio.fi_supported=0
-persist.vendor.radio.rat_on=combine
 persist.vendor.radio.data_ltd_sys_ind=1
 persist.vendor.radio.hidl_dev_service=1
 persist.vendor.radio.enableadvancedscan=true
@@ -323,6 +324,9 @@ persist.vendor.radio.enable_temp_dds=true
 persist.vendor.rcs.presence.provision=0
 ro.vendor.radio.imei.sv=4
 ro.vendor.use_data_netmgrd=true
+
+# Sensors
+ro.vendor.sensors.front_light_compensate=true
 
 # Shutdown
 sys.vendor.shutdown.waittime=500
