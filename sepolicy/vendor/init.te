@@ -22,4 +22,5 @@ recovery_only(`
   allow init rootfs:system module_load;
 ')
 
+allow init proc_vm:file rw_file_perms;
 allow init vendor_sysfs_vibrator:file create_file_perms;
