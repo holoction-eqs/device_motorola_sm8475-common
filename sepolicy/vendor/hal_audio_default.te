@@ -1,2 +1,3 @@
 hal_client_domain(hal_audio_default, hal_health);
 allow hal_audio_default fwk_sensor_hwservice:hwservice_manager find;
+unix_socket_connect(hal_audio_default, cutback, rild)
