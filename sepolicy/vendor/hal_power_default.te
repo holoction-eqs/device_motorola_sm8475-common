@@ -38,3 +38,6 @@ allow hal_power_default proc_vendor_sched:file r_file_perms;
 
 # EXPENSIVE_RENDERING setprop
 set_prop(hal_power_default, vendor_power_prop)
+
+# Allow libperfmgr to write to kgsl nodes
+allow hal_power_default vendor_sysfs_kgsl:{ file lnk_file } rw_file_perms;
