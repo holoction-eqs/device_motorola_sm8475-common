@@ -528,5 +528,15 @@
             <instance>default</instance>
         </interface>
     </hal>
+    <hal format="hidl">
+        <name>vendor.qti.hardware.dpmservice</name>
+        <transport>hwbinder</transport>
+        <version>1.1</version>
+        <interface>
+            <name>IDpmService</name>
+            <instance>DpmService</instance>
+        </interface>
+        <fqname>@1.1::IDpmService/DpmService</fqname>
+    </hal>
     <kernel target-level="6"/>
 </manifest>
