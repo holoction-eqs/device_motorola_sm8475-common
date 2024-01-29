@@ -519,5 +519,14 @@
         </interface>
         <fqname>@1.1::IQesdhal/default</fqname>
     </hal>
+    <hal format="hidl">
+        <name>vendor.qti.hardware.ListenSoundModel</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IListenSoundModel</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
     <kernel target-level="6"/>
 </manifest>
