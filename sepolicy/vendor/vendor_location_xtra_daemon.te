@@ -1,2 +1,0 @@
-allow vendor_location_xtra_daemon vendor_sysfs_soc_sensitive:unix_stream_socket { read };
-allow vendor_location_xtra_daemon vendor_sysfs_soc_sensitive:file { read };
