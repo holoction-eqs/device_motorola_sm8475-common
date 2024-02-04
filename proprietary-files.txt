@@ -326,8 +326,8 @@ vendor/lib64/libtestutils.so
 vendor/lib64/libtinyxml2_1.so
 
 # Display - SDM prebuilt from AOSP v33
-vendor/lib64/vendor.qti.hardware.display.config-V2-ndk.so
-vendor/lib64/vendor.qti.hardware.display.config-V5-ndk.so
+vendor/lib64/vendor.qti.hardware.display.config-V2-ndk.so|2082078eafb25dc96e0a39fcf836a8c741f0e7d1
+vendor/lib64/vendor.qti.hardware.display.config-V5-ndk.so|2bbf91b334244f30e5ca50e584eda09bfa9dd400
 
 # Display postprocessing
 vendor/bin/hw/vendor.display.color@1.0-service
@@ -795,7 +795,6 @@ vendor/lib64/libqtr_sdk.so
 vendor/lib64/libqvr_cam_cdsp_driver_stub.so
 vendor/lib64/libqvr_cdsp_driver_stub.so
 vendor/lib64/libqvr_eyetracking_plugin.so
-vendor/lib64/libqvr_hostcontroller_plugin.so
 vendor/lib64/libqvrcamera_client.qti.so
 vendor/lib64/libqvrservice.so
 vendor/lib64/libqvrservice_client.qti.so
@@ -1114,7 +1113,6 @@ vendor/lib64/libqesdk_manager.so
 vendor/lib64/libsdsprpc.so
 vendor/lib64/libsensorcal.so
 vendor/lib64/libsensorslog.so
-vendor/lib64/libsns_api.so
 vendor/lib64/libsns_device_mode_stub.so
 vendor/lib64/libsns_direct_channel_stub.so
 vendor/lib64/libsns_registry_skel.so
