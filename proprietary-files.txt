@@ -1010,19 +1010,37 @@ vendor/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so
 # RIL - IMS - system_ext - nothing pong
 -system_ext/priv-app/ims/ims.apk|1dca477d88a276e5fc39ae2ce91a17cb83035527
 
-# RIL - IMS - system_ext - eqs T1SQ33
+# RIL - IMS - system_ext
 -system_ext/app/ImsRcsService/ImsRcsService.apk
+system_ext/etc/permissions/vendor.qti.ims.rcsconfig-java.xml
 system_ext/etc/permissions/vendor.qti.ims.rcsservice.xml
+system_ext/framework/vendor.qti.ims.callcapability-V1.0-java.jar
+system_ext/framework/vendor.qti.ims.callcapabilityaidlservice-V1-java.jar
+system_ext/framework/vendor.qti.ims.callinfo-V1.0-java.jar
+system_ext/framework/vendor.qti.ims.configaidlservice-V1-java.jar
+system_ext/framework/vendor.qti.ims.configservice-V1.0-java.jar
+system_ext/framework/vendor.qti.ims.configservice-V1.1-java.jar
 system_ext/framework/vendor.qti.ims.connection-V1.0-java.jar
+system_ext/framework/vendor.qti.ims.connectionaidlservice-V1-java.jar
+system_ext/framework/vendor.qti.ims.datachannelservice-V1-java.jar
+system_ext/framework/vendor.qti.ims.factory-V1.0-java.jar
+system_ext/framework/vendor.qti.ims.factory-V1.1-java.jar
 system_ext/framework/vendor.qti.ims.factory-V2.0-java.jar
 system_ext/framework/vendor.qti.ims.factory-V2.1-java.jar
 system_ext/framework/vendor.qti.ims.factory-V2.2-java.jar
+system_ext/framework/vendor.qti.ims.factoryaidlservice-V1-java.jar
+system_ext/framework/vendor.qti.ims.rcsconfig-V1.0-java.jar
+system_ext/framework/vendor.qti.ims.rcsconfig-V1.1-java.jar
+system_ext/framework/vendor.qti.ims.rcsconfig-V2.0-java.jar
+system_ext/framework/vendor.qti.ims.rcsconfig-V2.1-java.jar
 system_ext/framework/vendor.qti.ims.rcssip-V1.0-java.jar
 system_ext/framework/vendor.qti.ims.rcssip-V1.1-java.jar
 system_ext/framework/vendor.qti.ims.rcssip-V1.2-java.jar
+system_ext/framework/vendor.qti.ims.rcssipaidlservice-V1-java.jar
 system_ext/framework/vendor.qti.ims.rcsuce-V1.0-java.jar
 system_ext/framework/vendor.qti.ims.rcsuce-V1.1-java.jar
 system_ext/framework/vendor.qti.ims.rcsuce-V1.2-java.jar
+system_ext/framework/vendor.qti.ims.rcsuceaidlservice-V1-java.jar
 system_ext/lib64/lib-imsvideocodec.so
 system_ext/lib64/lib-imsvt.so
 system_ext/lib64/lib-imsvtextutils.so
@@ -1032,6 +1050,14 @@ system_ext/lib64/libimscamera_jni.so
 system_ext/lib64/libimsmedia_jni.so
 system_ext/lib64/vendor.qti.imsrtpservice@3.0.so
 system_ext/lib64/vendor.qti.imsrtpservice@3.1.so
+system_ext/lib64/vendor.qti.ImsRtpService-V1-ndk.so
+system_ext/lib64/vendor.qti.ims.callcapabilityaidlservice-V1-ndk.so
+system_ext/lib64/vendor.qti.ims.configaidlservice-V1-ndk.so
+system_ext/lib64/vendor.qti.ims.connectionaidlservice-V1-ndk.so
+system_ext/lib64/vendor.qti.ims.datachannelservice-V1-ndk.so
+system_ext/lib64/vendor.qti.ims.factoryaidlservice-V1-ndk.so
+system_ext/lib64/vendor.qti.ims.rcssipaidlservice-V1-ndk.so
+system_ext/lib64/vendor.qti.ims.rcsuceaidlservice-V1-ndk.so
 
 # RIL - IMS
 vendor/bin/ims_rtp_daemon
