@@ -357,6 +357,14 @@ on property:sys.boot_completed=1 && property:ro.vendor.zram.product_swapon=""
 on property:sys.sysctl.swappiness=*
     write /proc/sys/vm/swappiness ${sys.sysctl.swappiness}
 
+on property:sys.boot_completed=1
+    stop vendor.qcrild
+    stop vendor.qcrild2
+    stop vendor.qcrild3
+    start vendor.qcrild
+    start vendor.qcrild2
+    start vendor.qcrild3
+
 service vendor.mmi-touch-sh /vendor/bin/init.mmi.touch.sh
     class core
     user root
