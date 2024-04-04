@@ -2,6 +2,9 @@
 camera.mot.is.coming.cts   u:object_r:moto_camera_config_prop:s0 exact bool
 ro.camera.req.fmq.size     u:object_r:moto_camera_config_prop:s0 exact bool
 ro.camera.res.fmq.size     u:object_r:moto_camera_config_prop:s0 exact bool
+vendor.camera.aux.packageexcludelist   u:object_r:vendor_persist_camera_prop:s0
+vendor.camera.aux.packagelist          u:object_r:vendor_persist_camera_prop:s0
+persist.vendor.camera.privapp.list         u:object_r:vendor_persist_camera_prop:s0
 
 # Motorola
 ro.mot.build.customerid    u:object_r:build_prop:s0
