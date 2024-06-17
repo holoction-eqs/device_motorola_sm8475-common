@@ -183,7 +183,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.gnss-V1-ndk.vendor \
     android.hardware.gnss@2.1.vendor \
-    android.hardware.power@1.2.vendor
+    android.hardware.power@1.2.vendor \
+    libsqlite.vendor \
+    libexif.vendor \
+    libusbhost.vendor
 
 # Health
 PRODUCT_PACKAGES += \
@@ -396,6 +399,7 @@ PRODUCT_COPY_FILES += \
 # QMI
 PRODUCT_PACKAGES += \
     libjson \
+    libjsoncpp.vendor \
     libqti_vndfwk_detect \
     libqti_vndfwk_detect.vendor \
     libvndfwk_detect_jni.qti \
@@ -446,7 +450,8 @@ PRODUCT_PACKAGES += \
     qti_telephony_utils.xml \
     qti-telephony-utils-prd \
     qti_telephony_utils_prd.xml \
-    telephony-ext
+    telephony-ext \
+    libsysutils.vendor
 
 PRODUCT_BOOT_JARS += \
     telephony-ext
