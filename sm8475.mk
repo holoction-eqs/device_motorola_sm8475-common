@@ -197,7 +197,9 @@ PRODUCT_PACKAGES += \
     libgeofencing \
     libloc_core \
     libgnss \
-    libgnsspps
+    libgnsspps \
+    libsqlite.vendor \
+    libexif.vendor
 
 PRODUCT_PACKAGES += \
     apdr.conf \
@@ -391,6 +393,7 @@ PRODUCT_DEXPREOPT_SPEED_APPS += SystemUIGoogle
 # QMI
 PRODUCT_PACKAGES += \
     libjson \
+    libjsoncpp.vendor \
     libqti_vndfwk_detect \
     libqti_vndfwk_detect.vendor \
     libvndfwk_detect_jni.qti \
@@ -446,7 +449,8 @@ PRODUCT_PACKAGES += \
     qti_telephony_utils.xml \
     qti-telephony-utils-prd \
     qti_telephony_utils_prd.xml \
-    telephony-ext
+    telephony-ext \
+    libsysutils.vendor
 
 PRODUCT_BOOT_JARS += \
     telephony-ext
@@ -478,7 +482,8 @@ PRODUCT_PACKAGES_DEBUG += \
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.3-service-qti \
     init.qcom.usb.rc \
-    init.qcom.usb.sh
+    init.qcom.usb.sh \
+    libusbhost.vendor
 
 PRODUCT_SOONG_NAMESPACES += vendor/qcom/opensource/usb/etc
 
