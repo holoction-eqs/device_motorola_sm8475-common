@@ -14,6 +14,9 @@ genfscon sysfs /devices/platform/soc/88e0000.qcom,msm-eud/extcon/extcon0/cable.2
 genfscon sysfs /devices/platform/soc/88e0000.qcom,msm-eud/extcon/extcon2/cable.0/name          u:object_r:vendor_sysfs_graphics:s0
 genfscon sysfs /devices/platform/soc/88e0000.qcom,msm-eud/extcon/extcon2/cable.1/name          u:object_r:vendor_sysfs_graphics:s0
 genfscon sysfs /devices/platform/soc/88e0000.qcom,msm-eud/extcon/extcon2/cable.2/name          u:object_r:vendor_sysfs_graphics:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,msm-ext-disp/extcon/extcon0/state                u:object_r:vendor_sysfs_graphics:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,msm-ext-disp/extcon/extcon1/state                u:object_r:vendor_sysfs_graphics:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,msm-ext-disp/extcon/extcon2/state                u:object_r:vendor_sysfs_graphics:s0
 
 # Health
 genfscon sysfs /devices/platform/soc/soc:mmi,charger/power_supply/mmi_battery      u:object_r:vendor_sysfs_battery_supply:s0
@@ -63,3 +66,13 @@ genfscon sysfs /devices/platform/soc/soc:mmi,charger/wakeup                     
 genfscon sysfs /devices/platform/soc/soc:mmi,charger/power/wakeup                                  u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/soc:mmi,charger/power_supply/mmi_battery/power/wakeup         u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/soc:qcom,msm-audio-apr/soc:qcom,msm-audio-apr:qcom,q6core-audio/soc:qcom,msm-audio-apr:qcom,q6core-audio:bolero-cdc/rx-macro/rx_swr_ctrl/wakeup/wakeup u:object_r:sysfs_wakeup:s0
+
+# VM
+genfscon proc /sys/vm/dirty_ratio               u:object_r:proc_vm:s0
+genfscon proc /sys/vm/dirty_bytes               u:object_r:proc_vm:s0
+genfscon proc /sys/vm/dirty_background_bytes    u:object_r:proc_vm:s0
+genfscon proc /sys/vm/min_free_kbytes           u:object_r:proc_vm:s0
+
+genfscon proc /sys/vm/swappiness                u:object_r:proc_vm:s0
+genfscon proc /sys/vm/vfs_cache_pressure        u:object_r:proc_vm:s0
+genfscon proc /sys/vm/lowmem_reserve_ratio      u:object_r:proc_vm:s0

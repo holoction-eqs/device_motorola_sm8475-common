@@ -1,1 +1,4 @@
 allow vendor_hal_gnss_qti fwk_sensor_hwservice:hwservice_manager find;
+
+get_prop(vendor_hal_gnss_qti, vendor_pd_locater_dbg_prop)
+allow vendor_hal_gnss_qti fwk_sensor_service:service_manager find;

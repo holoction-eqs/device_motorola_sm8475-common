@@ -56,6 +56,9 @@
 /data/vendor/fpc(/.*)?                                  u:object_r:fingerprint_vendor_data_file:s0
 /dev/esfp0                                              u:object_r:egis_device:s0
 
+# Label discard_max_bytes in /data partition
+/sys/devices/platform/soc/1d84000.ufshc/host0/target0:0:0/0:0:0:0/block/sda/queue/discard_max_bytes u:object_r:vendor_sysfs_scsi_host:s0
+
 # Media
 /(vendor|system/vendor)/bin/hw/vendor\.dolby\.media\.c2@1\.0-service            u:object_r:mediacodec_exec:s0
 
@@ -65,7 +68,7 @@
 # NFC
 /(vendor|system/vendor)/bin/STFlashTool                                       u:object_r:stflashtool_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.nfc@1\.2-service\.st        u:object_r:hal_nfc_default_exec:s0
-#/dev/st21nfc                                                                   u:object_r:nfc_device:s0
+/dev/st21nfc                                                                   u:object_r:nfc_device:s0
 
 # Radio
 /data/vendor/misc/cutback(/.*)?                         u:object_r:cutback_data_file:s0
@@ -97,6 +100,8 @@
 
 # Vibrator
 /sys/devices/platform/soc/990000.i2c/i2c-1/1-005a/leds/vibrator(/.*)?                     u:object_r:vendor_sysfs_vibrator:s0
+/sys/class/qcom-haptics(/.*)?                     u:object_r:vendor_sysfs_vibrator:s0
+/dev/qcom_haptic									  u:object_r:aac_richtap_dev_device:s0
 
 # Wakeups
 /sys/devices/virtual/input/input[0-9]+/wakeup[0-9]+(/.*)?                                 u:object_r:sysfs_wakeup:s0
