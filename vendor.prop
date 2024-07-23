@@ -340,6 +340,7 @@ persist.vendor.enable_spu=true
 persist.vendor.ssr.restart_level=ALL_ENABLE
 
 # Surfaceflinger
+ro.surface_flinger.clear_slots_with_set_layer_buffer=true
 ro.surface_flinger.enable_frame_rate_override=true
 ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
 ro.surface_flinger.has_HDR_display=true
