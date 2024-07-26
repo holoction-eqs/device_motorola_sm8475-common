@@ -57,4 +57,12 @@ $(SUPER_MODEM_MOUNT_POINT): $(LOCAL_INSTALLED_MODULE)
 ALL_DEFAULT_INSTALLED_MODULES += $(FIRMWARE_MOUNT_POINT) $(BT_FIRMWARE_MOUNT_POINT) $(DSP_MOUNT_POINT) $(FSG_MOUNT_POINT) \
     $(SUPER_FSG_MOUNT_POINT) $(SUPER_MODEM_MOUNT_POINT)
 
+CNE_APP_SYMLINKS := $(TARGET_OUT_VENDOR)/app/CneApp/lib/arm64
+$(CNE_APP_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
+	@echo "Creating CneApp symlinks: $@"
+	@mkdir -p $@
+	$(hide) ln -sf /vendor/lib64/libvndfwk_detect_jni.qti.so $@/libvndfwk_detect_jni.qti.so
+
+ALL_DEFAULT_INSTALLED_MODULES += $(CNE_APP_SYMLINKS)
+
 endif
